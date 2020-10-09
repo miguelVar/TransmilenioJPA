@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/transmilenio?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">root</property>
+    <mapping class="modelo.Zonas"></mapping>
+    <mapping class="modelo.Troncales"></mapping>
+    <mapping class="modelo.Estaciones"></mapping>
+    <mapping class="modelo.Servicios"></mapping>
+    <mapping class="modelo.Rutas"></mapping>
+    <mapping class="modelo.TipoServicio"></mapping>
+    <mapping class="modelo.RutasId"></mapping>
+    <mapping class="modelo.Dias"></mapping>
+    <mapping class="modelo.Horario"></mapping>
+    <mapping class="modelo.HorarioId"></mapping>
+    <mapping class="modelo.Usuarios"></mapping>
+    <mapping class="modelo.Recorridos"></mapping>
+    <mapping class="modelo.RecorridosHasServicios"></mapping>
+    <mapping class="modelo.RecorridosHasServiciosId"></mapping>
+  </session-factory>
+</hibernate-configuration>
